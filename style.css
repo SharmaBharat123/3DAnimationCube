@@ -1,0 +1,97 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    perspective: 580px;
+    transition: all .5s;
+    background:rgb(56, 46, 192) ;
+    
+    
+}
+body:hover{
+    perspective: 1500px;
+}
+.text{
+    width:auto;
+    position: absolute;
+    padding-bottom:700px; 
+    font-size: xx-large;
+    font-style: oblique;
+    color: darkseagreen;
+    text-decoration: underline;
+}
+
+
+.wrapper{
+    width:300px;
+    height:300px;
+    position:absolute;
+    transition:all 10s;
+    transform:rotateZ(0) rotateX(0) rotateY(0);
+    transform-style: preserve-3d;
+    
+}
+.wrapper:hover{
+    transform:rotateZ(0deg) rotateX(90deg) rotateY(310deg);
+}
+.face{
+    position:absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all .5s;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.face:nth-child(1){
+    background-image: url(./caps.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center left;
+    transform:rotateY(90deg) translateX(-150px);
+}
+.face:nth-child(2){
+    background-image: url(./blackwidow.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center right;
+    transform:rotateY(-90deg) translateX(150px);
+}
+.face:nth-child(3){
+    background-image: url(./hulk.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center top;
+    transform:rotateX(-90deg) translateY(-150px);
+}
+.face:nth-child(4){
+    background-image: url(./hawkaye.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center bottom;
+    transform:rotateX(90deg) translateY(150px);
+}
+.face:nth-child(5){
+    background-image: url(./ironman.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center bottom;
+    transform:translateZ(-150px);
+}
+.face:nth-child(6){
+    background-image: url(./thor1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center bottom;
+    transform:translateZ(150px);
+}
